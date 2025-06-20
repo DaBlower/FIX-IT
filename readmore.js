@@ -18,20 +18,23 @@
     <span class="text-secondary-weak font-normal"><faceplate-number number="1"><!---->1</faceplate-number> more reply</span>
 </button> */
 
-document.addEventListener('DOMContentLoaded', function() {
     function expandAll() {
         document.querySelectorAll('button').forEach(function(btn) {
+            const text = btn.innerText.trim().toLowerCase() // gets the text in each button
             if (
-                btn.checkVisiblity() &&
-                btn.innerText.trim().toLowerCase().includes('more reply')
+                btn.offsetParent !== null && // is the button visible?
+                (text.includes('more reply') || text.includes('more replies')) // does it contain more reply or more replies? (the text inside the expand button)
             ) {
-                btn.click();
+                btn.click(); // click the button
             }
 
         })
-    }
+    };
     setTimeout(expandAll, 2000);
-});
 
+    const observer = new MutationObserver(expandAll);
 
-
+    observer.observe(document.body, {
+        childList: true, // observe changes to children as well as document.body
+        subtree: true // include non-immediate children
+    });
