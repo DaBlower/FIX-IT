@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name        Read More
 // @namespace   Violentmonkey Scripts
+// @match       https://www.reddit.com/*
 // @grant       none
 // @version     1.0
 // @author      DaBlower
@@ -17,12 +18,20 @@
     <span class="text-secondary-weak font-normal"><faceplate-number number="1"><!---->1</faceplate-number> more reply</span>
 </button> */
 
+document.addEventListener('DOMContentLoaded', function() {
+    function expandAll() {
+        document.querySelectorAll('button').forEach(function(btn) {
+            if (
+                btn.checkVisiblity() &&
+                btn.innerText.trim().toLowerCase().includes('more reply')
+            ) {
+                btn.click();
+            }
 
-function expandAll() {
-    document.querySelectorAll('button').forEach(function(btn {
-        if (
-            btn.checkVisiblity() &&
-            btn.innerText.strip().toLowerCase().includes('more reply')
-        )
-    }))
-}
+        })
+    }
+    expandAll();
+});
+
+
+
