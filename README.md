@@ -1,5 +1,5 @@
 # Read More
-A userscript to automatically expand truncated comments and replies without clicking "read more"
+A userscript to automatically expand truncated comments and replies so you don't have to click "read more"
 
 ### Features
 - Expands truncated **YouTube comments**, including on Shorts and long-form videos.
