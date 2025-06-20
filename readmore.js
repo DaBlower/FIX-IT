@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         })
     }
-    expandAll();
+    setTimeout(expandAll, 2000);
 });
 
 
