@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name        Read More
-// @namespace   Violentmonkey Scripts
+// @namespace   https://github.com/DaBlower
 // @match       https://www.reddit.com/*
 // @match       https://www.youtube.com/*
 // @grant       none
 // @version     1.2
 // @author      DaBlower
+// @license     GPL-3.0-only
 // @description Automatically expand truncated comments and replies without clicking "read more"
 // ==/UserScript==
 
