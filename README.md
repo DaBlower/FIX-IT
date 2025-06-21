@@ -1,5 +1,6 @@
 # Read More
-![Static Badge](https://img.shields.io/badge/install-userscript-brightgreen?link=https%3A%2F%2Fraw.githubusercontent.com%2FDaBlower%2FFIX-IT%2Frefs%2Fheads%2Fmain%2Freadmore.user.js)
+![Static Badge](https://img.shields.io/badge/install-userscript-brightgreen?link=https%3A%2F%2Fraw.githubusercontent.com%2FDaBlower%2FFIX-IT%2Frefs%2Fheads%2Fmain%2Freadmore.user.js)<br>
+<br>
 A userscript to automatically expand truncated comments and replies so you don't have to click "read more"
 
 ### Features
